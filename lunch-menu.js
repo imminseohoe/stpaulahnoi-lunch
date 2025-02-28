@@ -314,7 +314,7 @@ function displayMenuForSelectedDate(autoSkip = false) {
             
             menuCard.innerHTML = `
                 <div class="menu-header ${categoryClass}">${menu.category} Menu</div>
-                <img src="${menu.imageUrl}" alt="${menu.dish}" class="menu-image" onerror="this.src='/api/placeholder/400/250'; this.alt='Image not available'">
+                <img src="${menu.imageUrl}" alt="${menu.dish}" class="menu-image" >
                 <div class="menu-details">
                     <p>${menu.dish}</p>
                 </div>
