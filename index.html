@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Lunch Menu</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .date-selection {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .date-selection select, .date-selection button, .date-selection input {
+            padding: 8px 12px;
+            margin: 0 5px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            background-color: white;
+        }
+        .date-selection button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .date-selection button:hover {
+            background-color: #2980b9;
+        }
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .menu-card {
+            flex: 1;
+            min-width: 300px;
+            max-width: 450px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .menu-header {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .western {
+            background-color: #3498db;
+            color: white;
+        }
+        .asian {
+            background-color: #e74c3c;
+            color: white;
+        }
+        .menu-image {
+    width: 100%;
+    height: 250px;
+    object-fit: contain; /* Show the full image, no cropping */
+    object-position: center;
+    aspect-ratio: 4 / 3;
+    display: block;
+    background-color: #f0f0f0; /* Light gray background for letterboxed areas */
+}
+        .menu-details {
+            padding: 15px;
+        }
+        .no-menu {
+            text-align: center;
+            padding: 30px;
+            font-size: 1.2rem;
+            color: #7f8c8d;
+        }
+        .message {
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            color: #6c757d;
+        }
+        .date-display {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>School Lunch Menu</h1>
+            <div class="date-display" id="current-date">Select a date to view the menu</div>
+        </header>
+        
+        <div class="date-selection">
+            <input type="date" id="date-picker" min="2025-03-01" max="2025-03-31">
+            <button id="show-today">Today's Menu</button>
+            <button id="prev-day">Previous Day</button>
+            <button id="next-day">Next Day</button>
+        </div>
+        
+        <div id="menu-container" class="menu-container">
+            <div class="no-menu">Please select a date to view the menu</div>
+        </div>
+        
+        <div class="message" id="message"></div>
+    </div>
+
+    <script src="lunch-menu.js"></script>
+</body>
+</html>
