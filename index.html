@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Lunch Menu</title>
+    <meta name="description" content="Explore the diverse and nutritious lunch menu at St. Paul American School Hanoi. Offering Asian and Western cuisine with a full-service salad bar, our online canteen system ensures balanced meals tailored to students' preferences.">
+    <meta name="keywords" content="St. Paul American School Hanoi, school lunch menu, nutritious meals, Asian cuisine, Western cuisine, online canteen system, healthy eating, Hanoi school dining">
+    <meta name="author" content="St. Paul American School Hanoi">
+    <title>St. Paul American School Hanoi - Diverse & Nutritious Lunch Menu</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -29,6 +32,14 @@
         h1 {
             color: #2c3e50;
             margin-bottom: 5px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 20px;
+        }
+        p {
+            line-height: 1.6;
+            margin: 10px 0;
         }
         .date-selection {
             margin: 20px 0;
@@ -80,14 +91,14 @@
             color: white;
         }
         .menu-image {
-    width: 100%;
-    height: 250px;
-    object-fit: contain; /* Show the full image, no cropping */
-    object-position: center;
-    aspect-ratio: 4 / 3;
-    display: block;
-    background-color: #f0f0f0; /* Light gray background for letterboxed areas */
-}
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            object-position: center;
+            aspect-ratio: 4 / 3;
+            display: block;
+            background-color: #f0f0f0;
+        }
         .menu-details {
             padding: 15px;
         }
@@ -110,27 +121,93 @@
             color: #7f8c8d;
             margin-bottom: 10px;
         }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>School Lunch Menu</h1>
+            <h1>St. Paul American School Hanoi: Lunch Menu</h1>
             <div class="date-display" id="current-date">Select a date to view the menu</div>
         </header>
-        
+
+
         <div class="date-selection">
             <input type="date" id="date-picker" min="2025-03-01" max="2025-03-31">
             <button id="show-today">Today's Menu</button>
             <button id="prev-day">Previous Day</button>
             <button id="next-day">Next Day</button>
         </div>
-        
+
         <div id="menu-container" class="menu-container">
             <div class="no-menu">Please select a date to view the menu</div>
         </div>
-        
         <div class="message" id="message"></div>
+        <section>
+            <h2>Introduction</h2>
+            <p>At St. Paul American School Hanoi, we understand the importance of providing students with nutritious and diverse meal options. Our lunch program is designed to cater to various tastes while ensuring balanced nutrition.</p>
+        </section>
+
+        <section>
+            <h2>Daily Menu Options</h2>
+            <p>Each day, our canteen offers two main choices:</p>
+            <ul>
+                <li><strong>Asian Cuisine:</strong> Traditional dishes reflecting the rich flavors of the region.</li>
+                <li><strong>Western Cuisine:</strong> Familiar favorites from Western culinary traditions.</li>
+            </ul>
+            <p>In addition to these main courses, students and staff have access to a full-service salad bar, promoting healthy eating habits.</p>
+        </section>
+
+        <section>
+            <h2>Monthly Menu Planning</h2>
+            <p>We believe in transparency and collaboration with parents. A carefully planned menu is sent to parents one month in advance. This allows families to:</p>
+            <ul>
+                <li>Review upcoming meal options.</li>
+                <li>Select daily lunch preferences using our online canteen system.</li>
+            </ul>
+            <p>For elementary students, parents assist in making meal choices. Secondary students have the autonomy to log in and select their meals independently.</p>
+        </section>
+
+        <section>
+            <h2>Online Canteen System</h2>
+            <p>Our user-friendly online system streamlines the meal selection process:</p>
+            <ul>
+                <li><strong>Access:</strong> Log in using provided credentials.</li>
+                <li><strong>Review:</strong> Browse the monthly menu.</li>
+                <li><strong>Select:</strong> Choose preferred meals for each day.</li>
+                <li><strong>Submit:</strong> Confirm selections to ensure accurate meal preparation.</li>
+            </ul>
+            <p>This system ensures that every student receives meals tailored to their preferences and dietary needs.</p>
+        </section>
+
+        <section>
+            <h2>Nutritional Balance</h2>
+            <p>We prioritize the health and well-being of our students. Our menus are crafted to provide:</p>
+            <ul>
+                <li><strong>Balanced Nutrition:</strong> Incorporating essential food groups.</li>
+                <li><strong>Variety:</strong> Offering different dishes to prevent monotony.</li>
+                <li><strong>Quality Ingredients:</strong> Sourcing fresh and wholesome produce.</li>
+            </ul>
+            <p>By doing so, we aim to support the physical and cognitive development of our students.</p>
+        </section>
+      
+
+        <footer>
+            <h2>Conclusion</h2>
+            <p>St. Paul American School Hanoi is committed to offering a lunch program that meets the diverse tastes and nutritional needs of our students. Through careful planning and collaboration with parents, we ensure that every meal contributes positively to the student experience.</p>
+            
+        </footer>
+        <section style="text-align: center;">
+            <h2>Contact</h2>
+            <p>If you have any questions, please reach out to us at the following email:</p>
+            <p><a href="mailto:jaemin.lim@stpaulhanoi.com">jaemin.lim@stpaulhanoi.com</a></p>
+        </section>
     </div>
 
     <script src="lunch-menu.js"></script>
